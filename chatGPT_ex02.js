@@ -2,7 +2,7 @@
 const axios = require('axios');
 const readline = require('readline');
 
-const API_KEY = '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';
+const API_KEY = '<YOUR API KEY>';
 
 const rl = readline.createInterface({
   input: process.stdin,

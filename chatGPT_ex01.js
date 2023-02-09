@@ -1,7 +1,7 @@
 
 const axios = require('axios');
 
-const API_KEY = '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';
+const API_KEY = '<YOUR API KEY>';
 const PROMPT = 'What is the meaning of life?';
 
 const options = {
