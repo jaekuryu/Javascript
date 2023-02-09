@@ -1,0 +1,46 @@
+<html>
+  <head>
+   
+    <style>
+      #text-field {
+        width: 600px;
+        height: 10em;
+        text-align: center;
+      }
+      #controls {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <table style="border: thin solid black;">
+      <tr>
+        <td id="output"></td>
+      </tr>
+      <tr>
+        <td>
+          <textarea id="text-field">Type in any text here and hit [Submit] button</textarea>
+        </td>
+      </tr>
+      <tr id="controls">
+        <td>
+          <select id="font-select">
+            <option value="Arial">Arial</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Verdana">Verdana</option>
+          </select>
+          <input type="checkbox" id="bold-checkbox">Bold</input>
+          <input type="checkbox" id="italic-checkbox">Italic</input>
+          <button id="submit-button">Submit</button>
+        </td>
+      </tr>
+    </table>
+    <script src="Document_Update.js"></script>
+  </body>
+</html>
+
+
