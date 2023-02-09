@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style_plotpolar.css">
+  <script src="plotPolar.js"></script>
+</head>
+<body>
+  <center> 
+  <table align="center" cellspacing="0" cellpadding="0" border="1">
+    <tr>
+      <td>
+        <input type="text" id="expression" value="100*abs(cos(t))">
+        <button onclick="plot()">Plot</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <canvas id="plot" width="400" height="400"></canvas>
+      </td>
+    </tr>
+  </table>
+  </center> 
+</body>
+</html>

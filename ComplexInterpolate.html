@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <table align="center" style="border-collapse: collapse; border: thin solid;">
+        <tr>
+            <td>
+                <label for="NoOfSample">Number of Points:</label>
+                <input type="number" id="NoOfSample" name="NoOfSample" min="1" value="10" onClick="plotInterpolation()" style="width: 50px;">
+                <button id="Plot" onClick="plotInterpolation()">Plot</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="A1">[Complex No. c1 = A1 e^(t1 j)]  A1:</label>
+                <input type="number" id="A1" name="A1" min="0" value="0.5" step="0.1" style="width: 50px;" onClick="plotInterpolation()">
+                <label for="t1">t1:</label>
+                <input type="number" id="t1" name="t1" min="0" value="30" step="5" style="width: 50px;" onClick="plotInterpolation()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="A2">[Complex No. c2 = A2 e^(t2 j)]  A2:</label>
+                <input type="number" id="A2" name="A2" min="0" value="1.5" step="0.1" style="width: 50px;" onClick="plotInterpolation()">
+                <label for="t2">t2:</label>
+                <input type="number" id="t2" name="t2" min="0" value="270" step="5" style="width: 50px;" onClick="plotInterpolation()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <canvas id="plotCanvas" width="400" height="400" style="border: thin solid;"></canvas>
+            </td>
+        </tr>
+    </table>
+    <script src="mathjs/math.js"></script>
+    <script src="PlotInterpolateComplex.js"></script>
+</body>
+
+</html>

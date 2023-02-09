@@ -1,0 +1,384 @@
+<html>
+
+<head>
+<title> Python | ShareTechnote</title>
+<meta name="description=" content="This site is for everything on Python">
+<script src="../jquery-3.6.0.js"></script>
+  <script type='text/javascript'>
+   $(document).ready(function(){
+    $( "#header" ).load( "../header.html" );
+   });
+   $(document).ready(function(){
+    $( "#menu_main" ).load( "../menu_main.html" );
+   });
+   $(document).ready(function(){
+    $( "#menu_Python" ).load( "menu_Python.html" );
+   });
+   $(document).ready(function(){
+    $( "#panel_right" ).load( "../panel_right.html" );
+   });
+  </script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
+
+<div id='header'></div>
+<div id='menu_main'></div>
+
+<div class='content'>
+
+<table border="0" width="1368">
+        <tr>
+            <td width="151" rowspan="2" valign="top">
+                <div id='menu_Python'></div>
+            </td>
+            <td width="802">
+                <p><b><span style="font-size:14pt;"><font face="Verdana" color="#993300">Python</font></span></b></p>
+            </td>
+            <td width="401">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="802" valign="top">
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;" align="center"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+     crossorigin="anonymous">
+                
+                
+                </script>
+                <!-- Horiz_Wide_Handbook_LTE_Index -->
+                <ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9961293861045757"
+     data-ad-slot="3613728775"></ins>
+                <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+                
+                
+                </script>
+   
+</p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;
+                <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39820307-1', 'auto');
+  ga('send', 'pageview');
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                </script>
+
+			</p>
+                
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><b><font face="Verdana" color="#993300">K Cluster</font></b></span></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana"><font face="Verdana">&nbsp;</font></font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">In this note, I want to try to apply an approach that is completely from other notes. I wanted to use chatGPT to create a Python code that I want instead of writing it myself. </span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="red"><b>NOTE</b></font><font face="Verdana"> : Refer to <a href="JS_LearnFromChatGPT.html" target="_self">this note</a> for my personal experience with chatGPT coding and advtantage &amp; limitation of the tool. In general, I got very positive impression with chatGPT utilization for coding. </font></span></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">This code is created first by chatGPT on Feb 03&nbsp;2023 (meaning using chatGPT 3.5) and then modified a little bit my me. The initial request that I put into chatGPT is as follows :</span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                <table border="1" width="802" cellspacing="0" bordercolordark="white" bordercolorlight="black">
+                    <tr>
+                        <td width="792" bgcolor="#EEEEEE">
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">Write a python script for the demo of K clustering method with following requirement.</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">1. Do not import any specific library specialized for Data analysis (only numpy and matplotlib are allowed if necessary)</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">2. Define following parameters (a ~ j) as mandatory</span></font></p>
+                            <ul>
+                                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">a)n_data : the number of sample data which will be generated automatically by the program</span></font></p>
+                                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">b)n_clusters: The number of clusters to form as well as the number of centroids to generate.</span></font></p>
+                                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">c)init: The method for initialization of the centroids. The options are 'k-means++', 'random', or an ndarray.</span></font></p>
+                                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">d)n_init: Number of time the k-means algorithm will be run with different centroid seeds. The final results will be the best output of n_init consecutive runs in terms of inertia.</span></font></p>
+                                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">e)max_iter: Maximum number of iterations of the k-means algorithm for a single run.</span></font></p>
+                                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">f)tol: Relative tolerance with regards to inertia to declare convergence.</span></font></p>
+                                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">g)precompute_distances: Precompute distances (faster but takes more memory).</span></font></p>
+                                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">h)verbose: Verbosity mode.</span></font></p>
+                                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">i)random_state: Determines random number generation for centroid initialization. Pass an int for reproducible results.</span></font></p>
+                                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">j)copy_x: When pre-computing distances it is more numerically accurate to center the data first. If copy_x is True, then the original data is not modified. Setting copy_x to False may be faster for large datasets.</span></font></p>
+                            </ul>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">3. Generate a set of arbitrary data (the size of the set is n_data)</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">4. Implement the K clustring algorithm for the given data</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">5. Plot the data set with each cluster in different colors</span></font></p>
+                        </td>
+                    </tr>
+                </table>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="red">NOTE</font></span><font face="Verdana"><span style="font-size:10pt;"> : It is not guaranteed that you would have the same code as I got since chatGPT produce the answers differently depending on the context. And it may produce the different answers everytime you ask even with the exact the same question. </span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="red">NOTE</font></span><font face="Verdana"><span style="font-size:10pt;"> : In this code, the requirements step 2) is also generated by chatGPT based on my question : &quot;give me the list of parameters for K clustering. </span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="red">NOTE</font></span><font face="Verdana"><span style="font-size:10pt;"> : If you don't have any of your own idea for the request, copy my request and paste it into the chatGPT and put additional requests based on the output for the previous request. I would suggest to create a new thread in the chatGPT and put my request and then continue to add your own request. </span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                <table border="1" width="804" cellspacing="0" bgcolor="#EEEEEE" bordercolordark="white" bordercolorlight="black" style="line-height:100%; margin-top:0; margin-bottom:0;" height="1470">
+                    <tr>
+                        <td width="794">
+                            <p><font face="Verdana"><span style="font-size:10pt;">Kclustring_01.py</span></font></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="794" height="1445">
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">import numpy as np</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">import matplotlib.pyplot as plt</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">import random</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># This is the description of this function.</font></span></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># 1) Initialization: randomly initialize the centroids. The number of centroids is determined by the user and is equal to n_clusters.</font></span></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># 2) Assignment: assign each data point to the nearest centroid. This can be done by calculating the Euclidean distance between each data point and each centroid.</font></span></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># 3) Recomputation: calculate the mean of all the data points assigned to each centroid and use this mean as the new centroid.</font></span></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># 4) Repeat steps 2 and 3 until either the maximum number of iterations (max_iter) is reached or the difference between the old centroids and the new centroids is less than a user-defined tolerance (tol).</font></span></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># 5) Labeling: assign a label to each data point based on the centroid it was assigned to.</font></span></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># 6) Plotting: scatter plot the data points and color code them based on their labels. Plot the centroids as well, in a different color.</font></span></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># 7) Evaluation: Evaluate the performance of the K-Means algorithm by comparing the true labels of the data with the predicted labels obtained by the algorithm.</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">def kmeans(data, n_clusters, init, n_init, max_iter, tol, precompute_distances, verbose, random_state, copy_x):</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;n_samples, n_features = data.shape</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># Randomly initialize the centroids</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;if init == 'k-means++':</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;centroids = np.zeros((n_clusters, n_features))</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;centroids[0] = data[np.random.randint(n_samples), :]</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for i in range(1, n_clusters):</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dist = np.array([min([np.linalg.norm(data[j] - centroids[k]) for k in range(i)]) for j in range(n_samples)])</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;probs = dist/dist.sum()</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cumprobs = probs.cumsum()</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r = np.random.rand()</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for j, p in enumerate(cumprobs):</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if r &lt; p:</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;centroids[i] = data[j, :]</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;elif init == 'random':</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;centroids = data[np.random.randint(n_samples, size=n_clusters), :]</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;else:</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;centroids = init</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><font face="Verdana" color="#00CC00">&nbsp;# Perform the K-means algorithm</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;for n in range(n_init):</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;centroids_old = centroids.copy()</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># Assign the samples to the nearest centroids</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;labels = np.array([np.argmin([np.linalg.norm(data[i]-centroids[j]) for j in range(n_clusters)]) for i in range(n_samples)])</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><font face="Verdana" color="#00CC00">&nbsp;# Compute the new centroids as the mean of the samples assigned to each centroid</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for i in range(n_clusters):</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;centroids[i] = np.mean(data[labels == i], axis=0)</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># Check if the centroids have changed</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if np.linalg.norm(centroids - centroids_old) &lt; tol:</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><font face="Verdana" color="#00CC00">&nbsp;# Plot the results</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;plt.scatter(data[:, 0], data[:, 1], c=labels)</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;plt.scatter(centroids[:, 0], centroids[:, 1], marker='x', s=200, linewidths=3, color='r')</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;plt.show()</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># Define the parameters</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">n_data = 500</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">n_clusters = 3</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">init = 'k-means++'</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">n_init = 10</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">max_iter = 300</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">tol = 1e-4</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">precompute_distances = False</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">verbose = False</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">random_state = None</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">copy_x = True</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># Generate arbitrary data</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">np.random.seed(0)</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">data = np.random.randn(n_data, 2)</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># Perform the K-means clustering</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">kmeans(data, n_clusters, init, n_init, max_iter, tol, precompute_distances, verbose, random_state, copy_x)</span></font></p>
+                        </td>
+                    </tr>
+                </table>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">The result from this code is as follows : </span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;" align="center"><img src="../image/Python_Kcluster_01.png" width="642" height="554" border="0"></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">As a next step, I asked chatGPT to simplify the code using a any package that can simplify the same implementation and the test routine.&nbsp;The requested code and the result are as follow. </span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                <table border="1" width="804" cellspacing="0" bgcolor="#EEEEEE" bordercolordark="white" bordercolorlight="black" style="line-height:100%; margin-top:0; margin-bottom:0;">
+                    <tr>
+                        <td width="794">
+                            <p><font face="Verdana"><span style="font-size:10pt;">Kclustring_03.py</span></font></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="794">
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">import numpy as np</span></font><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">import matplotlib.pyplot as plt</span></font><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">import random</span></font><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">import numpy as np</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">from sklearn.cluster import KMeans</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">import matplotlib.pyplot as plt</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">def kmeans(data, n_clusters, n_init=10, max_iter=300, tol=0.0001, random_state=0):</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;kmeans = KMeans(n_clusters=n_clusters, n_init=n_init, max_iter=max_iter, tol=tol, random_state=random_state)</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;kmeans.fit(data)</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;labels = kmeans.labels_</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;centroids = kmeans.cluster_centers_</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;return labels, centroids</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">def display_result(X, y_pred, n_clusters, kmeans):</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;plt.scatter(X[:, 0], X[:, 1], c=y_pred)</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s = 300, c = 'yellow', label = 'Centroids')</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;plt.title(f'K-Means Clustering (n_clusters={n_clusters})')</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;plt.show()</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">def test_kmeans():</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># Generate random sample data with 100 samples and 2 features</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;n_samples = 500</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;n_features = 2</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;X = np.random.rand(n_samples, n_features)</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;n_clusters = 2</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># Call the kmeans function</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;labels, centroids = kmeans(X, n_clusters)</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># Assert that the shape of the labels is correct</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;assert labels.shape == (n_samples,), f&quot;Expected shape {(n_samples,)}, but got {labels.shape}&quot;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># Assert that the shape of the centroids is correct</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;assert centroids.shape == (n_clusters, n_features), f&quot;Expected shape {(n_clusters, n_features)}, but got {centroids.shape}&quot;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># Create an instance of the KMeans class</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;kmeans_model = KMeans(n_clusters=n_clusters, n_init=10, max_iter=300, tol=0.0001, random_state=0)</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;kmeans_model.fit(X)</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></font><span style="font-size:10pt;"><font face="Verdana" color="#00CC00"># Display the result</font></span><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;&nbsp;&nbsp;&nbsp;display_result(X, labels, n_clusters, kmeans_model)</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">test_kmeans()</span></font><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                            <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                        </td>
+                    </tr>
+                </table>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">&nbsp;</span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;">The result of the code is as shown below. </span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;" align="center"><img src="../image/Python_Kcluster_02.png" width="640" height="480" border="0"></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;">&nbsp;</p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt; line-height:100%;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"> <font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"> <font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p style="line-height:100%; margin-top:0; margin-bottom:0;"><font face="Verdana"><span style="font-size:10pt;"></span></font></p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </td>
+            <td width="401" valign="top">
+               <div id='panel_right'></div>        
+            </td>
+        </tr>
+    <tr>
+            <td width="151">&nbsp;</td>
+        <td width="802">&nbsp;</td>
+            <td width="401">&nbsp;</td>
+    </tr>
+</table>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <table align="center" style="border-collapse: collapse; border: 1px solid black;">
+      <tr>
+        <td>
+          View Distance: <input id="ViewDistance" type="number" value="5" onClick="draw()" onChange="draw()"/>
+          <button id="Draw" onClick="draw()">Draw</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Azimuth: <input id="Azimuth" type="number" value="30" onClick="draw()" onChange="draw()"/>
+          Elevation: <input id="Elevation" type="number" value="30" onClick="draw()" onChange="draw()"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <center><canvas id="myCanvas" width="400" height="400" ></canvas></center>
+        </td>
+      </tr>
+    </table>
+    <script src="mathjs/math.js"></script>
+    <script src="d3tod2_base.js"></script>
+  </body>
+</html>

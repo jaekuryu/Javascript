@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Complex Number Calculator</title>
+  </head>
+  <body>
+    <table style="border: thin solid; margin: auto;">
+      <tr>
+        <th>Complex 1</th>
+        <th>Operator</th>
+        <th>Complex 2</th>
+        <th>=</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" id="Complex1" value="1 + 1j">
+        </td>
+        <td>
+          <center>
+          <select id="Operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select>
+          </center>
+        </td>
+        <td>
+          <input type="text" id="Complex2" value="1 + 2j">
+        </td>
+        <td>
+          <button id="Calculate" onclick="CalcExpr()">Calculate</button>
+        </td>
+        <td>
+          <input type="text" id="Result">
+        </td>
+      </tr>
+    </table>
+    <script src="CalcComplex.js"></script>
+  </body>
+</html>
+

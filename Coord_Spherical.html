@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <table align="center" style="border-collapse: collapse; border: 1px solid black;">
+      <tr>
+        <td>
+          View Distance: <input id="ViewDistance" type="number" value="10" onClick="draw()" onChange="draw()"/>
+          <button id="Draw" onClick="draw()">Draw</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          View Azimuth: <input id="Azimuth" type="number" value="-10" onClick="draw()" onChange="draw()"/>
+          View Elevation: <input id="Elevation" type="number" value="10" onClick="draw()" onChange="draw()"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Inclination: <input id="Inclination" type="number" value="30" onClick="draw()" onChange="draw()"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <center><canvas id="myCanvas" width="400" height="400" ></canvas></center>
+        </td>
+      </tr>
+    </table>
+    <script src="mathjs/math.js"></script>
+    <script src="Coord_Spheical.js"></script>
+  </body>
+</html>

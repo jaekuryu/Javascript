@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Constellation Plot</title>
+
+</head>
+
+<body>
+    <table align="center" style="border-collapse: collapse; border: 1px solid black;">
+        <tr>
+            <td>
+                <label for="NoOfSample">Number of samples</label>
+                <input type="number" id="NoOfSample" name="NoOfSample" value="600" min="1">
+                <button id="Constellation" onClick="plotSignal()">Constellation</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Noise">Gaussian Noise (in dB)</label>
+                <input type="number" id="Noise" name="Noise" value="-15" step="1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <canvas id="constellationCanvas" width="400" height="400"></canvas>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="mathjs/math.js"></script>
+    <script type="text/javascript" src="Constellation.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  // Function to call OpenAI API
+  async function completeText(prompt) {
+    const responseField = document.getElementById("response");
+    try {
+      // Your OpenAI API key
+      const apiKey = "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";
+      // Endpoint for text completion
+      const endpoint = "https://api.openai.com/v1/completions";
+      // Parameters for the API call
+      const params = {
+        prompt: prompt,
+        model: "text-davinci-003",
+        max_tokens: 500,
+        n: 1
+      };
+      // Headers for the API call
+      const headers = {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${apiKey}`
+      };
+      // Make the API call
+      const response = await axios.post(endpoint, params, { headers });
+      // Return the completed text
+      // console.log(response.data.choices[0].text); 
+      responseField.textContent =   response.data.choices[0].text;  
+      return response.data.choices[0].text;
+    } catch (error) {
+      console.error(error);
+    }
+  }
+</script>
+
+  </head>
+  <body>
+    <textarea id="prompt" cols="80" rows="10"></textarea>
+    <p>
+    <button onclick="document.getElementById('completed').innerHTML = completeText(prompt.value)">Complete Text</button>
+    </p> 
+    <p id="completed"></p>
+    <p>
+    <textarea id="response" cols="80" rows="20"></textarea>
+    </p>
+  </body>
+</html>
