@@ -1,7 +1,7 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
-const uri = "mongodb+srv://jaeku:wjdgus2302@cluster0.r1yhop4.mongodb.net?retryWrites=true&w=majority";
-//const uri = "mongodb+srv://jaeku:wjdgus2302@cluster0.r1yhop4.mongodb.net?authSource=admin&appName=mongDB_connectTest.js";
+// you need to replace <userid>:<password> with your user id and password for mongodb atlas account
+const uri = "mongodb+srv://<userid>:<password>@cluster0.r1yhop4.mongodb.net?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { serverApi: ServerApiVersion.v1 });
 
 console.log("Starting MongoDB connection");
